@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<script src="jquery.min.js"></script>
+		<script src="client.js"></script>
+		<link href="styles.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<textarea class="log_box"></textarea>
+
+		<div class="server_command_area">
+			Frontend Deployment Commander by Alan Tuckwood <a href="https://github.com/123Spork/deployment_commander">Github</a>
+			<div class="server_box_name">Administrative Frontend (Example)</div>
+			<div class="server_box">
+				<div class="server_area">
+					<div class="server_box_sub_name">HTTP Server</div>
+					<div class="server_start_btn" name="admin_dev">Start Server</div>
+					<div class="server_stop_btn hide" name="admin_dev">Stop Server</div>
+					<div class="server_go_btn hide" name="admin_dev">Go</div>
+				</div>
+				<div class="build_area">
+					<div class="server_box_sub_name">Builds</div>
+					<div class="run_build" name="admin_dev">Build Dev</div>
+					<div class="stop_build hide" name="admin_dev">Stop Building Dev</div>
+					<div class="run_build right" name="admin_live">Build Live</div>
+					<div class="stop_build right hide" name="admin_live">Stop Building Live</div>
+				</div>
+				<div class="deploy_area">
+					<div class="server_box_sub_name">Deployment</div>
+					<div class="deploy" name="admin_dev">Deploy Dev</div>
+					<div class="deploying hide" name="admin_dev">Deploying Dev</div>
+					<div class="deploy" name="admin_live">Deploy Live</div>
+					<div class="deploying hide" name="admin_live">Deploying Live</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+
+	<script>
+		$(document).ready(function() {
+			send_sys_msg("test",{},function(e){
+    			init();
+    		},function(e){
+    			$('body').html('SERVER CONNECTION FAILED, THIS SHOULDNT HAPPEN, SEEK HELP');
+    		});
+		});
+	</script>
+</html>

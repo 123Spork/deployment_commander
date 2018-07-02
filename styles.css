@@ -1,0 +1,128 @@
+body{
+	font-family: 'arial'
+}
+.server_box{
+	display:block;
+	float:left;
+	width:calc(100% - 20px);
+	margin:10px;
+	margin-top: 0px;
+}
+
+.server_box_name{
+	display:block;
+	float:left;
+	width:calc(100% - 36px);
+	background-color: #25a;
+	color:white;
+	padding: 8px;
+	font-size: 30px;
+	margin:10px;
+	margin-bottom: 0px;
+}
+
+.server_box_sub_name{
+	display:block;
+	float:left;
+	border-bottom: 1px solid #ccc;
+	background-color: #59f;
+	width:calc(100% - 10px);
+	padding:5px;
+	color:white;
+}
+
+.server_command_area{
+	display:block;
+	float:left;
+	width:calc(100% - 500px);
+	overflow: auto;
+	height:100%;
+}
+
+.server_area,
+.build_area,
+.deploy_area,
+.log_box{
+	display:block;
+	float:left;
+	width: 50%;
+	min-height: 100px;
+	background-color:#eee;
+}
+
+.build_area{
+	background-color: #ddd;
+}
+
+.deploy_area{
+	width:100%;
+}
+
+.log_box{
+	height:calc(100% - 20px);
+	margin: 10px;
+	width:480px;
+	float:right;
+	overflow: auto;
+}
+
+
+.server_start_btn,
+.server_stop_btn,
+.server_go_btn,
+.run_build,
+.stop_build,
+.deploy,
+.deploying{
+	display:block;
+	padding:4px;
+	font-size: 18px;
+	float:left;
+	height:30px;
+	line-height: 30px;
+	width:180px;
+	color:white;
+	margin:10px;
+	text-align: center;
+	background-color:#25a;
+	cursor:pointer;
+}
+
+.extended{
+	width:300px;
+}
+
+.server_go_btn{
+	width:30px;
+	float:right;
+}
+
+.full_build,
+.stop_full_build{
+	float:right;
+}
+
+.server_start_btn,
+.run_build,
+.deploy{
+	background-color: red;
+}
+.server_stop_btn,
+.stop_build,
+.deploying{
+	background-color: green;
+}
+
+.splitter{
+	display:block;
+	float:left;
+	width:100%;
+}
+
+.hide{
+	display:none;
+}
+
+.right{
+	float:right;
+}

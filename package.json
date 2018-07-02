@@ -1,0 +1,26 @@
+{
+  "name": "deployment_commander",
+  "version": "1.0.0",
+  "description": "A deployment template system for frontend based projects. Used to generate HTTP web servers, start build processes through bash and deploy through ssh to wherever the project is hosted.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/123Spork/deployment_commander.git"
+  },
+  "keywords": [
+    "deployment",
+    "frontend",
+    "commander",
+    "helper"
+  ],
+  "author": "Alan Tuckwood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/123Spork/deployment_commander/issues"
+  },
+  "homepage": "https://github.com/123Spork/deployment_commander#readme"
+}
